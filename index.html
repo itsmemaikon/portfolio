@@ -17,7 +17,7 @@
           />
         </a>
       </div>
-      <nav id="navbar">
+      <nav id="navbar" class="navbar">
         <ul class="navbar-ul">
           <li><a href="#home">Início</a></li>
           <li><a href="#about">Sobre</a></li>
@@ -184,6 +184,11 @@
       <div class="cards">
         <div class="card-container cat-outros">
           <div class="card-title">GestorDinheiro</div>
+          <img
+            src="assets/projects/GestorDinheiro.png"
+            alt=""
+            class="card-image"
+          />
           <p class="card-description">
             GestorDinheiro é uma solução integrada para
             <span class="bold"> controle de finanças pessoais </span>,
@@ -192,11 +197,7 @@
             dinâmicas e dados em tempo real, ideal para organização financeira
             pessoal e aprendizado na Power Platform.
           </p>
-          <img
-            src="assets/projects/GestorDinheiro.png"
-            alt=""
-            class="card-image"
-          />
+
           <div class="card-badge">
             <div class="badge badge-powerapps">
               <ion-icon name="phone-portrait"></ion-icon>
@@ -208,7 +209,7 @@
             </div>
             <div class="badge badge-dataverse">
               <ion-icon name="server"></ion-icon>
-              Microsoft Dataverse
+              MS Dataverse
             </div>
           </div>
           <div class="btn card-btn">
@@ -222,11 +223,12 @@
 
         <div class="card-container cat-automacao">
           <div class="card-title">ResizeX</div>
+          <img src="assets/projects/ReSizeX.png" alt="" class="card-image" />
           <p class="card-description">
             Utilitário leve em Python para
             <span class="bold"> redimensionamento e conversão de imagens </span>
           </p>
-          <img src="assets/projects/ReSizeX.png" alt="" class="card-image" />
+
           <div class="card-badge">
             <div class="badge badge-python">
               <ion-icon name="logo-python"></ion-icon>
@@ -241,27 +243,47 @@
         </div>
       </div>
     </section>
-    <section id="contact">
-      <p>Contato</p>
-      <div class="links">
-        <div>
-          <a href="https://github.com/itsmemaikon" target="_blank">Github</a>
-        </div>
-        <div>
-          <a href="https://www.linkedin.com/in/maikonrclopes/" target="_blank"
-            >LinkedIn</a
-          >
-        </div>
-        <div>
-          <a href="mailto:maikonroberto7@gmail.com" target="_blank">E-mail</a>
-        </div>
+
+    <section id="contact" class="contact">
+      <div class="title">
+        <h2>Contato</h2>
+        <div class="h2-line"></div>
+      </div>
+      <p>
+        Estou sempre aberto a boas ideias e novos projetos. Entre em contato
+        comigo.
+      </p>
+
+      <div class="cards">
+        <a href="mailto:maikonroberto7@gmail.com" target="_blank">
+          <div class="card-container">
+            <ion-icon name="mail"></ion-icon>
+            <div class="card-title">E-mail</div>
+            <p>maikonroberto@gmail.com</p>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/maikonrclopes/" target="_blank">
+          <div class="card-container">
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <div class="card-title">LinkedIn</div>
+            <p>maikonrclopes</p>
+          </div>
+        </a>
+        <a href="https://github.com/itsmemaikon" target="_blank">
+          <div class="card-container">
+            <ion-icon name="logo-github"></ion-icon>
+            <div class="card-title">Github</div>
+            <p>itsmemaikon</p>
+          </div>
+        </a>
       </div>
       <p>
         Tecnologia bem aplicada é aquela que entrega valor e resolve problemas
-        reais
+        reais.
       </p>
     </section>
-    <footer id="footer">
+
+    <footer id="footer" class="footer">
       <p>© 2026 Maikon Lopes. Todos os direitos reservados.</p>
     </footer>
 
