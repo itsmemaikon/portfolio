@@ -417,7 +417,7 @@ ul {
 }
 
 .projects .cards {
-  grid-template-columns: repeat(auto-fit, minmax(45.5rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(29.1rem, 1fr));
 }
 
 .projects .card-container {
@@ -505,6 +505,11 @@ ul {
   .footer {
     padding: 1.02rem 4.2rem;
   }
+
+  /* .projects .cards {
+    display: flex;
+    flex-flow: column;
+  } */
 }
 
 @media (max-width: 768px) {
@@ -552,10 +557,6 @@ ul {
     flex-flow: column;
   }
 
-  .card-container {
-    max-width: 95vw;
-  }
-
   .projects .badge,
   .card-buttons,
   .card-btn {
@@ -586,7 +587,3 @@ ul {
 .footer {
   display: none;
 } */
-
-.card-container {
-  /* display: none; */
-}
