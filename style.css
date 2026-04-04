@@ -552,6 +552,10 @@ ul {
     flex-flow: column;
   }
 
+  .card-container {
+    max-width: 95vw;
+  }
+
   .projects .badge,
   .card-buttons,
   .card-btn {
@@ -584,5 +588,5 @@ ul {
 } */
 
 .card-container {
-  display: none;
+  /* display: none; */
 }
