@@ -19,7 +19,7 @@
       </div>
       <nav id="navbar" class="navbar">
         <ul class="navbar-ul">
-          <li><a href="#home">Início</a></li>
+          <!-- <li><a href="#home">Início</a></li> -->
           <li><a href="#about">Sobre</a></li>
           <li><a href="#skills">Habilidades</a></li>
           <li><a href="#projects">Projetos</a></li>
@@ -150,14 +150,10 @@
               <ion-icon name="document"></ion-icon>
               Excel
             </div>
-            <div class="badge badge-vba">
-              <ion-icon name="code"></ion-icon>
-              VBA
-            </div>
           </div>
         </div>
         <div class="card-container">
-          <div class="card-title">Desenvolvimento WEB</div>
+          <div class="card-title">Desenvolvimento</div>
           <div class="card-badge">
             <div class="badge badge-html">
               <ion-icon name="logo-html5"></ion-icon>
@@ -171,11 +167,27 @@
               <ion-icon name="logo-javascript"></ion-icon>
               Javascript
             </div>
+            <div class="badge badge-powerapps">
+              <ion-icon name="phone-portrait"></ion-icon>
+              PowerApps
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card-title">Automação</div>
+          <div class="card-badge">
+            <div class="badge badge-vba">
+              <ion-icon name="code"></ion-icon>
+              VBA
+            </div>
+            <div class="badge badge-powerautomate">
+              <ion-icon name="alarm"></ion-icon>
+              Power Automate
+            </div>
           </div>
         </div>
       </div>
     </section>
-
     <section id="projects" class="projects">
       <div class="title">
         <h2>Projetos</h2>
@@ -183,67 +195,100 @@
       </div>
       <div class="cards">
         <div class="card-container cat-outros">
-          <div class="card-title">GestorDinheiro</div>
+          <div>
+            <p class="card-title">GestorDinheiro</p>
+            <p class="card-description">
+              GestorDinheiro é uma solução integrada para
+              <span class="bold"> controle de finanças pessoais </span>,
+              desenvolvida com PowerApps, Power BI e Microsoft Dataverse.<br />Permite
+              registrar receitas e despesas de forma prática, com visualizações
+              dinâmicas e dados em tempo real, ideal para organização financeira
+              pessoal e aprendizado na Power Platform.
+            </p>
+          </div>
           <img
             src="assets/projects/GestorDinheiro.png"
             alt=""
             class="card-image"
           />
-          <p class="card-description">
-            GestorDinheiro é uma solução integrada para
-            <span class="bold"> controle de finanças pessoais </span>,
-            desenvolvida com PowerApps, Power BI e Microsoft Dataverse.<br />Permite
-            registrar receitas e despesas de forma prática, com visualizações
-            dinâmicas e dados em tempo real, ideal para organização financeira
-            pessoal e aprendizado na Power Platform.
-          </p>
-
-          <div class="card-badge">
-            <div class="badge badge-powerapps">
-              <ion-icon name="phone-portrait"></ion-icon>
-              Power Apps
+          <div class="card-buttons">
+            <div class="btn card-btn">
+              <a
+                href="https://github.com/itsmemaikon/GestorDinheiro"
+                target="_blank"
+                >Ver no Github</a
+              >
             </div>
-            <div class="badge badge-powerbi">
-              <ion-icon name="bar-chart"></ion-icon>
-              Power BI
+            <div class="card-badge">
+              <div class="badge badge-powerapps">
+                <ion-icon name="phone-portrait"></ion-icon>
+                Power Apps
+              </div>
+              <div class="badge badge-powerbi">
+                <ion-icon name="bar-chart"></ion-icon>
+                Power BI
+              </div>
+              <div class="badge badge-dataverse">
+                <ion-icon name="server"></ion-icon>
+                MS Dataverse
+              </div>
             </div>
-            <div class="badge badge-dataverse">
-              <ion-icon name="server"></ion-icon>
-              MS Dataverse
-            </div>
-          </div>
-          <div class="btn card-btn">
-            <a
-              href="https://github.com/itsmemaikon/GestorDinheiro"
-              target="_blank"
-              >Ver no Github</a
-            >
           </div>
         </div>
-
         <div class="card-container cat-automacao">
-          <div class="card-title">ResizeX</div>
+          <div>
+            <p class="card-title">ResizeX</p>
+            <p class="card-description">
+              Utilitário leve em Python para
+              <span class="bold">
+                redimensionamento e conversão de imagens
+              </span>
+            </p>
+          </div>
           <img src="assets/projects/ReSizeX.png" alt="" class="card-image" />
-          <p class="card-description">
-            Utilitário leve em Python para
-            <span class="bold"> redimensionamento e conversão de imagens </span>
-          </p>
-
-          <div class="card-badge">
-            <div class="badge badge-python">
-              <ion-icon name="logo-python"></ion-icon>
-              Python
+          <div class="card-buttons">
+            <div class="btn card-btn">
+              <a href="https://github.com/itsmemaikon/ReSizeX" target="_blank"
+                >Ver no Github</a
+              >
+            </div>
+            <div class="card-badge">
+              <div class="badge badge-python">
+                <ion-icon name="logo-python"></ion-icon>
+                Python
+              </div>
             </div>
           </div>
-          <div class="btn card-btn">
-            <a href="https://github.com/itsmemaikon/ReSizeX" target="_blank"
-              >Ver no Github</a
-            >
+        </div>
+        <div class="card-container cat-web">
+          <div>
+            <p class="card-title">PizzaHash</p>
+            <p class="card-description">
+              Landing page de uma pizzaria fictícia para aprofundar
+              conhecimentos em HTML e CSS
+            </p>
+          </div>
+          <img src="assets/projects/PizzaHash.png" alt="" class="card-image" />
+          <div class="card-buttons">
+            <div class="btn card-btn">
+              <a href="https://github.com/itsmemaikon/PizzaHash" target="_blank"
+                >Ver no Github</a
+              >
+            </div>
+            <div class="card-badge">
+              <div class="badge badge-html">
+                <ion-icon name="logo-html5"></ion-icon>
+                HTML
+              </div>
+              <div class="badge badge-css">
+                <ion-icon name="logo-css3"></ion-icon>
+                CSS
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
     <section id="contact" class="contact">
       <div class="title">
         <h2>Contato</h2>
@@ -282,7 +327,6 @@
         reais.
       </p>
     </section>
-
     <footer id="footer" class="footer">
       <p>© 2026 Maikon Lopes. Todos os direitos reservados.</p>
     </footer>

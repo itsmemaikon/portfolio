@@ -102,7 +102,7 @@ ul {
 .btn {
   display: flex;
   flex-flow: row;
-  justify-content: start;
+  justify-content: center;
   align-items: left;
   font-size: 1.6rem;
   gap: 0.82rem;
@@ -149,7 +149,7 @@ ul {
 /* Cards */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(14.9rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(23.2rem, 1fr));
   gap: 2rem;
 }
 
@@ -158,9 +158,9 @@ ul {
   flex-flow: column;
   background-color: var(--bg-card);
   border: var(--border);
-  padding: 2.5rem 3.9rem;
+  padding: 1.28rem 3.9rem;
   border-radius: 0.52rem;
-  gap: 1.02rem;
+  gap: 1.6rem;
   align-items: center;
 }
 
@@ -171,7 +171,7 @@ ul {
 }
 
 .card-description {
-  font-size: 1.02rem;
+  font-size: 1.28rem;
 }
 
 .card-badge {
@@ -179,6 +179,13 @@ ul {
   flex-flow: column;
   gap: 0.42rem;
   width: 100%;
+}
+
+.card-buttons {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  align-items: center;
 }
 
 .card-btn {
@@ -193,12 +200,12 @@ ul {
   align-items: center;
   font-size: 1.6rem;
   gap: 0.33rem;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   padding: 0.21rem 1.6rem;
   font-weight: 700;
   border: var(--border);
   background-color: var(--bg-card);
-  opacity: 70%;
+  opacity: 100%;
 }
 
 .badge:hover {
@@ -208,32 +215,34 @@ ul {
 .badge-powerbi,
 .badge-python,
 .badge-js {
-  background-color: rgba(255, 193, 7, 1);
-  color: var(--txt-color-alt);
-  & ion-icon {
-    color: var(--txt-color-alt);
-  }
+  background-color: rgba(255, 193, 7, 0.2);
+  border: 0.15rem solid rgba(255, 193, 7, 1);
 }
 
 .badge-excel,
 .badge-dataverse,
 .badge-progress4gl {
-  background-color: rgba(31, 114, 68, 1);
+  background-color: rgba(31, 114, 68, 0.2);
+  border: 0.15rem solid rgba(31, 114, 68, 1);
 }
 
 .badge-vba,
 .badge-powerapps {
-  background-color: rgba(163, 56, 182, 1);
+  background-color: rgba(163, 56, 182, 0.2);
+  border: 0.15rem solid rgba(163, 56, 182, 1);
 }
 
 .badge-sql,
 .badge-html {
-  background-color: rgba(228, 76, 38, 1);
+  background-color: rgba(228, 76, 38, 0.2);
+  border: 0.15rem solid rgba(228, 76, 38, 1);
 }
 
 .badge-erp,
-.badge-css {
-  background-color: rgba(38, 76, 228, 1);
+.badge-css,
+.badge-powerautomate {
+  background-color: rgba(38, 76, 228, 0.2);
+  border: 0.15rem solid rgba(38, 76, 228, 1);
 }
 
 /* Header*/
@@ -408,29 +417,30 @@ ul {
 }
 
 .projects .cards {
-  grid-template-columns: repeat(auto-fit, minmax(23.2rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(45.5rem, 1fr));
+}
+
+.projects .card-container {
+  justify-content: space-between;
 }
 
 .projects .card-badge {
   display: flex;
   flex-flow: row;
-  align-items: center;
   justify-content: center;
 }
 
 .projects .card-image {
-  width: 36.4rem;
-  height: 36.4rem;
+  width: 100%;
 }
 
 /* Contato */
 .contact {
   display: flex;
   flex-flow: column;
-  gap: 1.5rem;
-  padding: 2rem 30rem;
-  /* align-items: center; */
+  gap: 1.6rem;
   text-align: center;
+  padding-bottom: 3rem;
 }
 
 .contact .cards {
@@ -439,7 +449,7 @@ ul {
 
 .contact ion-icon {
   color: var(--main-color);
-  font-size: 3rem;
+  font-size: 4.88rem;
 }
 
 .contact ion-icon:hover {
@@ -452,8 +462,8 @@ ul {
   display: flex;
   flex: column;
   width: 100vw;
-  height: 2.5rem;
   text-align: center;
+  border-top: var(--border);
 }
 
 .footer p {
@@ -461,23 +471,43 @@ ul {
 }
 
 /* Media Queries */
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
   html {
     font-size: 56.25%;
+  }
+
+  header,
+  section,
+  footer {
+    padding: 1.02rem 18.6rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 50%;
   }
 
   .header,
   section,
   .footer {
-    padding: 1.02rem 5.2rem;
+    padding: 1.02rem 1.19rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .header,
+  section,
+  .footer {
+    padding: 1.02rem 4.2rem;
   }
 }
 
 @media (max-width: 768px) {
-  html {
-    font-size: 50%;
-  }
-
   header,
   section,
   footer {
@@ -486,10 +516,6 @@ ul {
 
   .navbar {
     display: none;
-  }
-
-  .cards {
-    grid-template-columns: repeat(auto-fit, minmax(23.2rem, 1fr));
   }
 
   .home-content {
@@ -519,23 +545,17 @@ ul {
   .skills {
     margin-top: 0rem;
   }
-
-  .projects .cards {
-    grid-template-columns: repeat(auto-fit, minmax(45.5rem, 1fr));
-  }
 }
 
 @media (max-width: 556px) {
-  html {
-    font-size: 43.75%;
+  .projects .card-badge {
+    flex-flow: column;
   }
 
-  .cards {
-    grid-template-columns: repeat(auto-fit, minmax(36.4rem, 1fr));
-  }
-
-  .card-badge {
-    width: 80%;
+  .projects .badge,
+  .card-buttons,
+  .card-btn {
+    width: 100%;
   }
 }
 
@@ -553,12 +573,12 @@ ul {
   }
 }
 
-/* .header, */
-/* .home, */
-/* .about, */
-/* .skills, */
-/* .projects, */
+/* .header,
+.home,
+.about,
+.skills,
+.projects,
 .contact,
 .footer {
   display: none;
-}
+} */
