@@ -582,3 +582,7 @@ ul {
 .footer {
   display: none;
 } */
+
+.card-container {
+  display: none;
+}
