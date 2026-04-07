@@ -193,7 +193,51 @@
         <h2>Projetos</h2>
         <div class="h2-line"></div>
       </div>
-      <div class="cards">
+      <div class="project-buttons">
+        <div class="filters" id="filters">
+          <div id="all" class="btn selected" onclick="setFilter('all')">
+            Todos
+          </div>
+          <div id="cat-bi" class="btn" onclick="setFilter('cat-bi')">
+            BI & Dados
+          </div>
+          <div id="cat-erp" class="btn" onclick="setFilter('cat-erp')">
+            ERP & Negócios
+          </div>
+          <div id="cat-web" class="btn" onclick="setFilter('cat-web')">
+            Desenv. WEB
+          </div>
+          <div
+            id="cat-automacao"
+            class="btn"
+            onclick="setFilter('cat-automacao')"
+          >
+            Automação
+          </div>
+          <div id="cat-outros" class="btn" onclick="setFilter('cat-outros')">
+            Outros
+          </div>
+        </div>
+        <div class="pagination">
+          <div class="btn" id="prevPage">
+            <ion-icon name="caret-back-outline"></ion-icon>
+          </div>
+          <div class="btn" id="nextPage">
+            <ion-icon name="caret-forward-outline"></ion-icon>
+          </div>
+          <select name="perPage" id="perPage" class="btn">
+            <option value="1">1</option>
+            <option value="2" selected>2</option>
+            <option value="3">3</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="20">20</option>
+          </select>
+          <p style="align-self: center; font-size: 1.28rem">por página</p>
+        </div>
+      </div>
+
+      <div class="cards" id="gridProjects">
         <div class="card-container cat-outros">
           <div>
             <p class="card-title">GestorDinheiro</p>
@@ -289,6 +333,7 @@
         </div>
       </div>
     </section>
+
     <section id="contact" class="contact">
       <div class="title">
         <h2>Contato</h2>
@@ -340,5 +385,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>

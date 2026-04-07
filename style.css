@@ -13,7 +13,7 @@
   --bg: #131331;
   --bg-card: #111129;
   --border: 0.1rem solid rgba(255, 255, 255, 0.1);
-  --gradient: linear-gradient(180deg, var(--main-color), #341786);
+  --gradient: linear-gradient(180deg, var(--main-color), #341786, #341786);
   --header-height: 6.1rem;
 }
 
@@ -60,6 +60,10 @@ footer {
   padding: 1rem 36.4rem;
 }
 
+section {
+  padding-bottom: 3.2rem;
+}
+
 h1 {
   font-size: 9.91rem;
   text-transform: uppercase;
@@ -94,10 +98,37 @@ ul {
   list-style-type: none;
 }
 
+select option {
+  background: var(--main-color);
+  color: var(--txt-color);
+}
+
 .about,
 .skills {
   padding-top: 2.5rem;
 }
+
+.title {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 0.21rem;
+  & h2 {
+    color: var(--main-color);
+  }
+}
+
+.h2-line {
+  background-color: var(--txt-color);
+  width: 10%;
+  height: 0.05rem;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/* Buttons */
 
 .btn {
   display: flex;
@@ -126,24 +157,18 @@ ul {
   }
 }
 
-.title {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  gap: 0.21rem;
-  & h2 {
-    color: var(--main-color);
+.selected {
+  background: var(--txt-color);
+  color: var(--gradient);
+  & ion-icon {
+    color: var(--gradient);
   }
 }
 
-.h2-line {
-  background-color: var(--txt-color);
-  width: 10%;
-  height: 0.05rem;
-}
-
-.bold {
-  font-weight: 700;
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 /* Cards */
@@ -162,6 +187,7 @@ ul {
   border-radius: 0.52rem;
   gap: 1.6rem;
   align-items: center;
+  min-height: 18.6rem;
 }
 
 .card-title {
@@ -406,7 +432,6 @@ ul {
   display: flex;
   flex-flow: column;
   gap: 1.6rem;
-  margin-top: -4.2rem;
 }
 
 /* Projects */
@@ -417,7 +442,7 @@ ul {
 }
 
 .projects .cards {
-  grid-template-columns: repeat(auto-fit, minmax(29.1rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(23.2rem, 1fr));
 }
 
 .projects .card-container {
@@ -434,13 +459,28 @@ ul {
   width: 100%;
 }
 
+.project-buttons {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  gap: 1.28rem;
+}
+
+.filters,
+.pagination {
+  display: flex;
+  flex-flow: row;
+  gap: 0.33rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 /* Contato */
 .contact {
   display: flex;
   flex-flow: column;
   gap: 1.6rem;
   text-align: center;
-  padding-bottom: 3rem;
 }
 
 .contact .cards {
@@ -537,6 +577,12 @@ ul {
   .skills {
     margin-top: 0rem;
   }
+
+  .project-buttons {
+    flex-flow: column;
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 @media (max-width: 556px) {
@@ -564,8 +610,8 @@ ul {
     transform: translateY(4px);
   }
 }
-
-/* .header,
+/* 
+.header,
 .home,
 .about,
 .skills,
