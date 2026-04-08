@@ -251,7 +251,8 @@ select option {
 
 .badge-excel,
 .badge-dataverse,
-.badge-progress4gl {
+.badge-progress4gl,
+.badge-node {
   background-color: rgba(31, 114, 68, 0.2);
   border: 0.15rem solid rgba(31, 114, 68, 1);
 }
