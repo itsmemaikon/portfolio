@@ -444,7 +444,7 @@ select option {
 }
 
 .projects .cards {
-  grid-template-columns: repeat(auto-fit, minmax(23.2rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(56.8rem, 1fr));
 }
 
 .projects .card-container {
