@@ -190,6 +190,10 @@ select option {
   min-height: 18.6rem;
 }
 
+.card-text {
+  width: 100%;
+}
+
 .card-title {
   color: var(--txt-color);
   text-align: center;
@@ -207,7 +211,7 @@ select option {
   width: 100%;
 }
 
-.card-buttons {
+.card-content {
   display: flex;
   flex-flow: column;
   gap: 2rem;
@@ -280,23 +284,11 @@ select option {
   justify-content: space-between;
   border-bottom: var(--border);
   position: fixed;
-  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
   height: 6.1rem;
-}
-
-.header-photo {
-  width: 3.9rem;
-  height: 3.9rem;
-  border-radius: 50%;
-  border: var(--border);
-}
-
-.header-photo:hover {
-  border-radius: 25%;
 }
 
 .navbar-ul {
@@ -327,6 +319,7 @@ select option {
   position: relative;
   min-height: calc(100vh - 6.1rem);
   display: flex;
+  flex-flow: column;
   align-items: center;
   justify-content: center;
   background: url(assets/images/home.jpg) no-repeat;
@@ -349,9 +342,18 @@ select option {
   position: relative;
   z-index: 2;
   display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.12rem;
+}
+
+.home-container {
+  display: flex;
   flex-flow: row;
   align-items: center;
   justify-content: center;
+  gap: 2rem;
 }
 
 .home-photo {
@@ -361,12 +363,8 @@ select option {
 .home-photo img {
   width: 100%;
   height: 100%;
-  border-radius: 45%;
-  filter: brightness(0.9);
-}
-
-.home-photo img:hover {
-  filter: brightness(1.1);
+  border-radius: 5%;
+  border: var(--border);
 }
 
 .home-text {
@@ -392,7 +390,7 @@ select option {
   gap: 0.33rem;
 }
 
-.arrow-navigate {
+.home-arrow {
   display: inline-block;
   animation: bounce 1s infinite;
 }
@@ -417,12 +415,14 @@ select option {
 }
 
 .about-photo {
-  width: 29.1rem;
-  transform: translateY(-3.9rem);
+  /* width: 29.1rem; */
+  max-height: 29.1rem;
+  transform: translateY(-6.1rem);
+  aspect-ratio: 1;
 }
 
 .about-photo img {
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
   border-radius: 45%;
 }
@@ -447,6 +447,7 @@ select option {
 
 .projects .card-container {
   justify-content: space-between;
+  align-items: start;
 }
 
 .projects .card-badge {
@@ -456,7 +457,8 @@ select option {
 }
 
 .projects .card-image {
-  width: 100%;
+  max-width: 100%;
+  /* height: 29.1rem; */
 }
 
 .project-buttons {
@@ -533,6 +535,10 @@ select option {
   .footer {
     padding: 1.02rem 4.2rem;
   }
+
+  .projects .cards {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 768px) {
@@ -550,7 +556,7 @@ select option {
     display: none;
   }
 
-  .home-content {
+  .home-container {
     flex-flow: column;
   }
 
@@ -586,12 +592,16 @@ select option {
 }
 
 @media (max-width: 556px) {
+  h1 {
+    font-size: 5.73rem;
+  }
+
   .projects .card-badge {
     flex-flow: column;
   }
 
   .projects .badge,
-  .card-buttons,
+  .card-content,
   .card-btn {
     width: 100%;
   }

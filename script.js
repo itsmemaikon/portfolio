@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   prevPage.addEventListener("click", () => changePage("prev"));
   perPage.addEventListener("change", (event) => {
     qtPerPage = perPage.value;
-    showPage(currentPage);
+    showPage(1);
   });
 });
 

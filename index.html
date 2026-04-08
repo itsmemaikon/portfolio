@@ -8,24 +8,6 @@
   </head>
   <body>
     <header id="header" class="header">
-      <div>
-        <a href="#">
-          <img
-            src="assets/images/header-photo.jpeg"
-            alt=""
-            class="header-photo"
-          />
-        </a>
-      </div>
-      <nav id="navbar" class="navbar">
-        <ul class="navbar-ul">
-          <!-- <li><a href="#home">Início</a></li> -->
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#skills">Habilidades</a></li>
-          <li><a href="#projects">Projetos</a></li>
-          <li><a href="#contact">Contato</a></li>
-        </ul>
-      </nav>
       <div class="icons">
         <div>
           <a href="https://github.com/itsmemaikon" target="_blank"
@@ -43,39 +25,51 @@
           ></a>
         </div>
       </div>
+
+      <nav id="navbar" class="navbar">
+        <ul class="navbar-ul">
+          <!-- <li><a href="#home">Início</a></li> -->
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
     </header>
     <section id="home" class="home">
       <div class="home-content">
-        <div class="home-photo">
-          <img src="assets/images/home-photo.png" alt="" />
-        </div>
-        <div class="home-text">
-          <div>
-            <h1>Maikon Lopes</h1>
-            <div class="hr-line"></div>
-          </div>
-          <div>
-            <h2>Analista de Sistemas</h2>
-            <p>Conectando sistemas, pessoas e resultados</p>
-          </div>
-          <div class="home-buttons">
-            <a href="#projects">
-              <div class="btn">
-                <ion-icon name="code"></ion-icon>
-                <div>Projetos</div>
-              </div>
-            </a>
-            <a href="#contact">
-              <div class="btn">
-                <ion-icon name="at"></ion-icon>
-                <div>Contato</div>
-              </div>
-            </a>
-          </div>
-          <a href="#about">
-            <div class="arrow-navigate icons">
-              <ion-icon name="chevron-down"></ion-icon>
+        <div class="home-container">
+          <div class="home-text">
+            <div>
+              <h1>Maikon Lopes</h1>
+              <div class="hr-line"></div>
             </div>
+            <div>
+              <h2>Analista de Sistemas</h2>
+              <p>Conectando sistemas, pessoas e resultados</p>
+            </div>
+            <div class="home-buttons">
+              <a href="#projects">
+                <div class="btn">
+                  <ion-icon name="code"></ion-icon>
+                  <div>Projetos</div>
+                </div>
+              </a>
+              <a href="#contact">
+                <div class="btn">
+                  <ion-icon name="at"></ion-icon>
+                  <div>Contato</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="home-photo">
+            <img src="assets/images/home-photo.png" alt="" />
+          </div>
+        </div>
+        <div class="home-arrow icons">
+          <a href="#about">
+            <ion-icon name="chevron-down"></ion-icon>
           </a>
         </div>
       </div>
@@ -239,23 +233,21 @@
 
       <div class="cards" id="gridProjects">
         <div class="card-container cat-outros">
-          <div>
+          <div class="card-text">
             <p class="card-title">GestorDinheiro</p>
             <p class="card-description">
               GestorDinheiro é uma solução integrada para
               <span class="bold"> controle de finanças pessoais </span>,
-              desenvolvida com PowerApps, Power BI e Microsoft Dataverse.<br />Permite
-              registrar receitas e despesas de forma prática, com visualizações
-              dinâmicas e dados em tempo real, ideal para organização financeira
-              pessoal e aprendizado na Power Platform.
+              desenvolvida com PowerApps, Power BI e Microsoft Dataverse.
             </p>
           </div>
-          <img
-            src="assets/projects/GestorDinheiro.png"
-            alt=""
-            class="card-image"
-          />
-          <div class="card-buttons">
+          <div class="card-content">
+            <img
+              src="assets/projects/GestorDinheiro.png"
+              alt=""
+              class="card-image"
+            />
+
             <div class="btn card-btn">
               <a
                 href="https://github.com/itsmemaikon/GestorDinheiro"
@@ -280,7 +272,7 @@
           </div>
         </div>
         <div class="card-container cat-automacao">
-          <div>
+          <div class="card-text">
             <p class="card-title">ResizeX</p>
             <p class="card-description">
               Utilitário leve em Python para
@@ -289,8 +281,9 @@
               </span>
             </p>
           </div>
-          <img src="assets/projects/ReSizeX.png" alt="" class="card-image" />
-          <div class="card-buttons">
+          <div class="card-content">
+            <img src="assets/projects/ReSizeX.png" alt="" class="card-image" />
+
             <div class="btn card-btn">
               <a href="https://github.com/itsmemaikon/ReSizeX" target="_blank"
                 >Ver no Github</a
@@ -305,15 +298,20 @@
           </div>
         </div>
         <div class="card-container cat-web">
-          <div>
+          <div class="card-text">
             <p class="card-title">PizzaHash</p>
             <p class="card-description">
               Landing page de uma pizzaria fictícia para aprofundar
               conhecimentos em HTML e CSS
             </p>
           </div>
-          <img src="assets/projects/PizzaHash.png" alt="" class="card-image" />
-          <div class="card-buttons">
+          <div class="card-content">
+            <img
+              src="assets/projects/PizzaHash.png"
+              alt=""
+              class="card-image"
+            />
+
             <div class="btn card-btn">
               <a href="https://github.com/itsmemaikon/PizzaHash" target="_blank"
                 >Ver no Github</a
