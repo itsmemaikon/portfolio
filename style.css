@@ -198,6 +198,7 @@ select option {
   color: var(--txt-color);
   text-align: center;
   font-weight: 700;
+  font-size: 2rem;
 }
 
 .card-description {
